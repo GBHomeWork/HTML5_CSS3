@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.heart, .bell {
+  padding: 100px;
+}
+
+.fa-heart {
+  color: red;
+  font-size: 50px;
+}
+
+.fa-heart:hover {
+  -webkit-animation: heartbeat 1.25s ease-out infinite;
+          animation: heartbeat 1.25s ease-out infinite;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  35% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  85% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  15% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  35% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  85% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+.fa-bell {
+  color: yellow;
+  font-size: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.fa-bell:hover {
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+  -webkit-animation: ringbell 1.5s 0.5s infinite;
+          animation: ringbell 1.5s 0.5s infinite;
+}
+
+@-webkit-keyframes ringbell {
+  from {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  to {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@keyframes ringbell {
+  from {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  to {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+.ball {
+  width: 365px;
+  position: relative;
+}
+
+.fa-basketball-ball {
+  position: absolute;
+  top: -30px;
+  color: red;
+  font-size: 30px;
+  -webkit-animation: ballfall 7s 2s ease-out 1 forwards;
+          animation: ballfall 7s 2s ease-out 1 forwards;
+}
+
+@-webkit-keyframes ballfall {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  12% {
+    -webkit-transform: translateY(395px);
+            transform: translateY(395px);
+    font-size: 35px;
+  }
+  23% {
+    -webkit-transform: translate(50px, 135px) rotate(51deg);
+            transform: translate(50px, 135px) rotate(51deg);
+    font-size: 40px;
+    color: orange;
+  }
+  34% {
+    -webkit-transform: translate(100px, 385px) rotate(102deg);
+            transform: translate(100px, 385px) rotate(102deg);
+    font-size: 45px;
+    color: yellow;
+  }
+  45% {
+    -webkit-transform: translate(150px, 235px) rotate(153deg);
+            transform: translate(150px, 235px) rotate(153deg);
+    font-size: 50px;
+    color: green;
+  }
+  56% {
+    -webkit-transform: translate(200px, 375px) rotate(204deg);
+            transform: translate(200px, 375px) rotate(204deg);
+    font-size: 55px;
+    color: skyblue;
+  }
+  67% {
+    -webkit-transform: translate(250px, 335px) rotate(255deg);
+            transform: translate(250px, 335px) rotate(255deg);
+    font-size: 60px;
+    color: blue;
+  }
+  78% {
+    -webkit-transform: translate(300px, 365px) rotate(306deg);
+            transform: translate(300px, 365px) rotate(306deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+  89% {
+    -webkit-transform: translate(330px, 365px) rotate(357deg);
+            transform: translate(330px, 365px) rotate(357deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+  to {
+    -webkit-transform: translate(300px, 365px) rotate(306deg);
+            transform: translate(300px, 365px) rotate(306deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+}
+
+@keyframes ballfall {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+  12% {
+    -webkit-transform: translateY(395px);
+            transform: translateY(395px);
+    font-size: 35px;
+  }
+  23% {
+    -webkit-transform: translate(50px, 135px) rotate(51deg);
+            transform: translate(50px, 135px) rotate(51deg);
+    font-size: 40px;
+    color: orange;
+  }
+  34% {
+    -webkit-transform: translate(100px, 385px) rotate(102deg);
+            transform: translate(100px, 385px) rotate(102deg);
+    font-size: 45px;
+    color: yellow;
+  }
+  45% {
+    -webkit-transform: translate(150px, 235px) rotate(153deg);
+            transform: translate(150px, 235px) rotate(153deg);
+    font-size: 50px;
+    color: green;
+  }
+  56% {
+    -webkit-transform: translate(200px, 375px) rotate(204deg);
+            transform: translate(200px, 375px) rotate(204deg);
+    font-size: 55px;
+    color: skyblue;
+  }
+  67% {
+    -webkit-transform: translate(250px, 335px) rotate(255deg);
+            transform: translate(250px, 335px) rotate(255deg);
+    font-size: 60px;
+    color: blue;
+  }
+  78% {
+    -webkit-transform: translate(300px, 365px) rotate(306deg);
+            transform: translate(300px, 365px) rotate(306deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+  89% {
+    -webkit-transform: translate(330px, 365px) rotate(357deg);
+            transform: translate(330px, 365px) rotate(357deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+  to {
+    -webkit-transform: translate(300px, 365px) rotate(306deg);
+            transform: translate(300px, 365px) rotate(306deg);
+    font-size: 65px;
+    color: darkmagenta;
+  }
+}
+
+.nature {
+  width: 125px;
+  position: relative;
+  padding: 75px 100px 100px;
+}
+
+.fa-cloud {
+  position: absolute;
+  font-size: 100px;
+  color: gray;
+  -webkit-animation: cloud 2s 17.2s 1 forwards;
+          animation: cloud 2s 17.2s 1 forwards;
+}
+
+.fa-tint {
+  position: absolute;
+  top: 135px;
+  z-index: -1;
+  color: gray;
+}
+
+.fa-tint-1 {
+  left: 101px;
+  -webkit-animation: tint-1 2s 10s 3;
+          animation: tint-1 2s 10s 3;
+}
+
+.fa-tint-2 {
+  left: 127px;
+  -webkit-animation: tint-2 2.2s 10s 3;
+          animation: tint-2 2.2s 10s 3;
+}
+
+.fa-tint-3 {
+  left: 154px;
+  -webkit-animation: tint-3 1.8s 10s 3;
+          animation: tint-3 1.8s 10s 3;
+}
+
+.fa-tint-4 {
+  left: 181px;
+  -webkit-animation: tint-4 1.6s 10s 3;
+          animation: tint-4 1.6s 10s 3;
+}
+
+.fa-tint-5 {
+  left: 208px;
+  -webkit-animation: tint-5 2.4s 10s 3;
+          animation: tint-5 2.4s 10s 3;
+}
+
+.fa-sun {
+  position: absolute;
+  left: 47%;
+  z-index: -1;
+  font-size: 70px;
+  color: yellow;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: sun 2s 17.2s 1 forwards;
+          animation: sun 2s 17.2s 1 forwards;
+}
+
+.bg {
+  position: absolute;
+  bottom: 115px;
+  left: 46%;
+  width: 30px;
+  height: 30px;
+  background-color: brown;
+}
+
+.fa-bitbucket {
+  position: absolute;
+  bottom: 100px;
+  left: 43%;
+  font-size: 60px;
+  color: brown;
+}
+
+.fa-seedling {
+  position: absolute;
+  bottom: 150px;
+  left: 43%;
+  z-index: -1;
+  font-size: 60px;
+  color: green;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: plant 2s 19.2s 1 forwards;
+          animation: plant 2s 19.2s 1 forwards;
+}
+
+@-webkit-keyframes cloud {
+  from {
+    color: grey;
+  }
+  to {
+    color: skyblue;
+  }
+}
+
+@keyframes cloud {
+  from {
+    color: grey;
+  }
+  to {
+    color: skyblue;
+  }
+}
+
+@-webkit-keyframes tint-1 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@keyframes tint-1 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@-webkit-keyframes tint-2 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@keyframes tint-2 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@-webkit-keyframes tint-3 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@keyframes tint-3 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@-webkit-keyframes tint-4 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@keyframes tint-4 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@-webkit-keyframes tint-5 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@keyframes tint-5 {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(245px);
+            transform: translateY(245px);
+  }
+}
+
+@-webkit-keyframes sun {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1) rotate(15deg);
+            transform: scale(1) rotate(15deg);
+  }
+}
+
+@keyframes sun {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1) rotate(15deg);
+            transform: scale(1) rotate(15deg);
+  }
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes plant {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
