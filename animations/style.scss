@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.heart, .bell {
+    padding: 100px;
+}
+
+.fa-heart {
+    color: red;
+    font-size: 50px;
+    &:hover {
+        animation: heartbeat 1.25s ease-out infinite;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.25);
+    }
+
+    35% {
+        transform: scale(0.75);
+    }
+
+    85% {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.fa-bell {
+    color: yellow;
+    font-size: 50px;
+    transition: 0.5s;
+    &:hover {
+        transform: rotate(-25deg);
+        animation: ringbell 1.5s 0.5s infinite;
+    }
+}
+
+@keyframes ringbell {
+    from {
+        transform: rotate(-25deg);
+    }
+
+    50% {
+        transform: rotate(25deg);
+    }
+
+    to {
+        transform: rotate(-25deg);
+    }
+}
+
+.ball {
+    width: 365px;
+    position: relative;
+}
+
+.fa-basketball-ball {
+    position: absolute;
+    top: -30px;
+    color: red;
+    font-size: 30px;
+    animation: ballfall 7s 2s ease-out 1 forwards;
+}
+
+@keyframes ballfall {
+    from {
+        transform: translateY(-50px);
+        }
+
+    12% {
+        transform: translateY(395px);
+        font-size: 35px;
+    }
+
+    23% {
+        transform: translate(50px, 135px) rotate(51deg);
+        font-size: 40px;
+        color: orange;
+    }
+
+    34% {
+        transform: translate(100px, 385px) rotate(102deg);
+        font-size: 45px;
+        color: yellow;
+    }
+
+    45% {
+        transform: translate(150px, 235px) rotate(153deg);
+        font-size: 50px;
+        color: green;
+    }
+
+    56% {
+        transform: translate(200px, 375px) rotate(204deg);
+        font-size: 55px;
+        color: skyblue;
+    }
+
+    67% {
+        transform: translate(250px, 335px) rotate(255deg);
+        font-size: 60px;
+        color: blue;
+    }
+
+    78% {
+        transform: translate(300px, 365px) rotate(306deg);
+        font-size: 65px;
+        color: darkmagenta;
+    }
+
+    89% {
+        transform: translate(330px, 365px) rotate(357deg);
+        font-size: 65px;
+        color: darkmagenta;
+    }
+
+    to {
+        transform: translate(300px, 365px) rotate(306deg);
+        font-size: 65px;
+        color: darkmagenta;
+    }
+}
+
+.nature {
+    width: 125px;
+    position: relative;
+    padding: 75px 100px 100px;
+}
+
+.fa-cloud {
+    position: absolute;
+    font-size: 100px;
+    color: gray;
+    animation: cloud 2s 17.2s 1 forwards;
+}
+
+.fa-tint {
+    position: absolute;
+    top: 135px;
+    z-index: -1;
+    color: gray;
+}
+
+.fa-tint-1 {
+    left: 101px;
+    animation: tint-1 2s 10s 3;
+}
+
+.fa-tint-2 {
+    left: 127px;
+    animation: tint-2 2.2s 10s 3;
+}
+
+.fa-tint-3 {
+    left: 154px;
+    animation: tint-3 1.8s 10s 3;
+}
+
+.fa-tint-4 {
+    left: 181px;
+    animation: tint-4 1.6s 10s 3;
+}
+
+.fa-tint-5 {
+    left: 208px;
+    animation: tint-5 2.4s 10s 3;
+}
+
+.fa-sun {
+    position: absolute;
+    left: 47%;
+    z-index: -1;
+    font-size: 70px;
+    color: yellow;
+    transform: scale(0);
+    animation: sun 2s 17.2s 1 forwards;
+}
+
+.bg {
+    position: absolute;
+    bottom: 115px;
+    left: 46%;
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+}
+
+.fa-bitbucket {
+    position: absolute;
+    bottom: 100px;
+    left: 43%;
+    font-size: 60px;
+    color: brown;
+}
+
+.fa-seedling {
+    position: absolute;
+    bottom: 150px;
+    left: 43%;
+    z-index: -1;
+    font-size: 60px;
+    color: green;
+    transform-origin: bottom;
+    transform: scale(0);
+    animation: plant 2s 19.2s 1 forwards;
+}
+
+@keyframes cloud {
+    from {
+        color: grey;
+    }
+
+    to {
+        color: skyblue;
+    }
+}
+
+@keyframes tint-1 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(245px);
+    }
+}
+
+@keyframes tint-2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(245px);
+    }
+}
+
+@keyframes tint-3 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(245px);
+    }
+}
+
+@keyframes tint-4 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(245px);
+    }
+}
+
+@keyframes tint-5 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(245px);
+    }
+}
+
+@keyframes sun {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1) rotate(15deg);;
+    }
+}
+
+@keyframes plant {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
